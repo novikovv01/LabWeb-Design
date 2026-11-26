@@ -1,0 +1,136 @@
+body {
+        font-family: Georgia, serif;
+        font-size: 100%;
+        line-height: 1.75em;
+        margin: 0 15%;
+        background: #d2dc9d url("blackgoose.png") no-repeat center 100px fixed;
+    }
+
+    #info {
+        margin-top: 0;
+        padding: 3em 1em 2em;
+        text-align: center;
+        background:
+            url("purpledot.png") left top repeat-y,
+            url("purpledot.png") right top repeat-y,
+            url("gooseshadow.png") 90% bottom no-repeat,
+            rgba(255, 255, 255, 0.5);
+    }
+
+    h1 {
+        font-family: Georgia, serif;
+        font-size: 2.25em;
+        font-weight: bold;
+        color: #939;
+        text-shadow: 0.05em 0.05em 0.1em lightslategray;
+    }
+
+    #info p {
+        font-style: italic;
+        color: gray;
+    }
+
+    .label {
+        font-variant: small-caps;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    h1, h2, #info {
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 0.5em;
+        color: #c60;
+    }
+
+    h2 + p {
+        text-align: center;
+        font-style: italic;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #939;
+    }
+
+    a:visited {
+        color: #937393;
+    }
+
+    a:hover,
+    a:focus {
+        color: #c700f2;
+        background-color: #fff;
+    }
+
+    a:active {
+        color: #ff00ff;
+        background-color: #fff;
+    }
+
+    dt {
+        font-weight: bold;
+        color: sienna;
+    }
+
+    strong {
+        font-style: italic;
+    }
+
+    dt strong {
+        color: tomato;
+    }
+
+    span.price {
+        font-family: Georgia, serif;
+        font-style: italic;
+        color: gray;
+    }
+
+    .warning {
+        font-size: small;
+    }
+
+    p.warning, sup {
+        color: red;
+    }
+
+    body::before,
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 15%;
+        background-image: url("bullseye.png");
+        background-repeat: repeat-y;
+        background-position: top center;
+        background-size: 100% auto;
+        z-index: -1;
+    }
+
+    body::before {
+        left: 0;
+    }
+
+    body::after {
+        right: 0;
+    }

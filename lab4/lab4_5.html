@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>5 Літнє меню бістро Чорний гусак</title>
+
+<style>
+    body {
+        font-family: Georgia, serif;
+        font-size: 100%;
+        line-height: 1.75em;
+        margin: 0 15%;
+        background: #d2dc9d url("blackgoose.png") no-repeat center 100px fixed;
+    }
+
+    #info {
+        margin-top: 0;
+        padding: 3em 1em 2em;
+        text-align: center;
+        background:
+            url("purpledot.png") left top repeat-y,
+            url("purpledot.png") right top repeat-y,
+            url("gooseshadow.png") 90% bottom no-repeat,
+            rgba(255, 255, 255, 0.5);
+    }
+
+    h1 {
+        font-family: Georgia, serif;
+        font-size: 2.25em;
+        font-weight: bold;
+        color: #939;
+        text-shadow: 0.05em 0.05em 0.1em lightslategray;
+    }
+
+    #info p {
+        font-style: italic;
+        color: gray;
+    }
+
+    .label {
+        font-variant: small-caps;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    h1, h2, #info {
+        text-align: center;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 0.5em;
+        color: #c60;
+    }
+
+    h2 + p {
+        text-align: center;
+        font-style: italic;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:link {
+        color: #939;
+    }
+
+    a:visited {
+        color: #937393;
+    }
+
+    a:hover,
+    a:focus {
+        color: #c700f2;
+        background-color: #fff;
+    }
+
+    a:active {
+        color: #ff00ff;
+        background-color: #fff;
+    }
+
+    dt {
+        font-weight: bold;
+        color: sienna;
+    }
+
+    strong {
+        font-style: italic;
+    }
+
+    dt strong {
+        color: tomato;
+    }
+
+    span.price {
+        font-family: Georgia, serif;
+        font-style: italic;
+        color: gray;
+    }
+
+    .warning {
+        font-size: small;
+    }
+
+    p.warning, sup {
+        color: red;
+    }
+
+    body::before,
+    body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 15%;
+        background-image: url("bullseye.png");
+        background-repeat: repeat-y;
+        background-position: top center;
+        background-size: 100% auto;
+        z-index: -1;
+    }
+
+    body::before {
+        left: 0;
+    }
+
+    body::after {
+        right: 0;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="info">
+<h1>Бістро Чорний гусак &bull; Літнє меню</h1>
+
+<p>Бульвар Театральний, Дніпро<br>
+<span class="label">Години роботи: понеділок-четвер</span> з 11 до 21, <span class="label">п'ятниця та субота</span> з 11 до півночі</p>
+
+<ul>
+    <li><a href="#appetizers">Закуски</a></li>
+    <li><a href="#entrees">Основні страви</a></li>
+</ul>
+
+</div>
+
+<div id="appetizers">
+<h2>Закуски</h2>
+<p>Цього сезону ми дегустуємо гострі смаки півдня у нашій колекції закусок.</p>
+
+<dl>
+<dt>Кульочки з чорною квасолею</dt>
+<dd>Гостра чорна квасоля та суміш мексиканських сирів, обгорнуті в листи філо та запечені до золотистого кольору. <span class="price">₴85.00</span></dd>
+
+<dt class="newitem">Наполеон зі шматочками краба у південно-західньому стилі &mdash; <strong>новинка!</strong></dt>
+<dd>Шари ніжного крабового м'яса, бобово-кукурудзяної сальси та нашої ручної роботи тортильї з борошна. <span class="price">₴155.00</span></dd>
+</dl>
+</div>
+
+<div id="entrees">
+
+<h2>Основні страви</h2>
+<p>Насичені, виразні та сміливі смаки - головний тренд цього літа. Дозвольте нам допомогти вам знайти ідеальне вино.</p>
+
+<dl>
+
+<dt class="newitem">Курка джерк, приготована на вертелі зі смаженими бананами &mdash; <strong>новинка!</strong></dt>
+<dd>Ніжна курка повільно запечена на вертелі, просмажена у гострому та ароматному соусі джерк та подана зі смаженими бананами та свіжим манго. <strong class="warning">Дуже гостре.</strong> <span class="price">₴299.00</span></dd>
+
+<dt>Креветкові шашлики з арахісовим соусом</dt>
+<dd>Шпажки з креветок, маринованих у лемонграсі, часнику та рибному соусі, а потім смажені до досконалості. Подані з гострим арахісовим соусом та імбирним рисом. <span class="price">₴265.00</span></dd>
+
+<dt>Скірт-стейк, смажений на грилі з грибним фрікасе</dt>
+<dd>Смачний скірт-стейк, замаринований у азіатських прянощах та смажений так, що Вам сподобається<sup>*</sup>. Подається поверх суміші обсмажених дикорослих грибів з сиром блю чіз та з порцією картопляного пюре. <span class="price">₴345.00</span></dd>
+</dl>
+
+</div>
+
+<p class="warning"><sup>*</sup> Ми зобов'язані попередити вас, що недостатньо тушкована їжа може бути небезпечною для здоров'я.</p>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Лабораторна робота 4_3</title>
+    <style>
+        div {
+        padding: 20px;
+        margin: 8px;
+        border: 5px solid gray;
+        background-color: rgba(255, 255, 0, 0.1);
+        }
+        .text-container h2 {
+            text-align: center;
+            text-transform: uppercase;
+            color: #4CAF50;
+        }
+        .paragraph {
+            text-indent: 50px;
+            text-align: justify;
+            letter-spacing: 3px;
+            padding: 5px;
+        }
+        .no-underline-link {
+            text-decoration: none;
+            color: #17a2b8;
+        }
+        #Arial {
+            font-family: Arial;
+        }
+        #LucidaConsole {
+            font-family: "Lucida Console", monospace;
+        }
+        #TimesNewRoman {
+            font-family: "Times New Roman", Times, serif;
+        }
+        #TNRCursive {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            font-style: italic;
+            background-color: blue;
+            color: white;
+            padding: 4px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="text-container">
+            <h2>Форматування тексту</h2>
+            <p class="paragraph">Цей текст оформлено з використанням деяких властивостей з таблиці стилів CSS для форматування тексту. Він розміщений в блоці з полями 20px, відступами 8px та межою 5px сірого кольору. Заголовок використовує властивості text-align, text-transform та color, які мають значення center, uppercase та #4CAF50 відповідно. Абзац з текстом починається з відступа, вирівнюється за шириною, а відстань між символами задається як 3px.</p>
+            
+            <p> 
+                Підкреслення видалене з наступного кольорового посилання
+            <a class="no-underline-link" href="#" target="_blank">"Спробуйте відкрити посилання на цю сторінку на новій вкладці"</a>.
+            </p>
+        </div>
+    
+        <h2>Сімейство шрифтів CSS</h2>
+        <p id="Arial">Цей абзац надрукований шрифтом Arial.</p>
+        <p id="LucidaConsole">Цей абзац надрукований шрифтом Lucida Console.</p>
+        <p id="TimesNewRoman">Цей абзац надрукований шрифтом Times New Roman.</p>
+        <p id="TNRCursive">Цей абзац надрукований шрифтом Times New Roman з розміром 18px та виділений курсивом.</p>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторна 3_4</title>
+    </head>
+    <body>
+        <h1>Тип браузера:</h1>
+        <form action="https://www.w3schools.com/action_page.php" method="get" target="result">
+            <fieldset>
+                <legend>Оберіть тип браузера:</legend>
+                <input type="text" id="browser" name="browser" list="browsers" placeholder="Введіть ваш браузер" size="30" autocomplete="off">
+                <button type="submit">Надіслати</button>
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Mozilla Firefox">
+                    <option value="Google Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </fieldset>
+        </form>
+    </body>
+</html>

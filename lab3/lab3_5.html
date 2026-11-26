@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторна 3_5</title>
+    </head>
+    <body>
+        <h1>Опитувальник</h1>
+        <form action="https://www.w3schools.com/action_page.php" method="get" target="result">
+            <fieldset>
+                <legend>Заповніть поля опитувальника:</legend>
+                <label for="name">Повне ім'я:</label><br>
+                <input type="text" id="name" name="name" placeholder="Ім'я, Прізвище" size="30" autocomplete="name" required><br>
+                <label for="password">Пароль:</label><br>
+                <input type="password" id="password" name="password" placeholder="password" size="30" autocomplete="current-password" required><br>
+                <label for="dateofbirth">Дата народження:</label><br>
+                <input type="date" id="dateofbirth" name="dateofbirth" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Стать:</legend>
+                <input type="radio" id="male" name="sex" value="Чоловік">
+                <label for="male">Чоловік</label><br>
+                <input type="radio" id="female" name="sex" value="Жінка">
+                <label for="female">Жінка</label><br>
+            </fieldset><br>
+            <label>Чи бажаєте отримувати повідомлення про новини:</label><br>
+            <input type="checkbox" id="news" name="news" value="yes" checked>
+            <label for="news">Так, я бажаю отримувати повідомлення про новини</label><br>
+            <label>Яку кількість новин ви бажаєте отримувати в день:</label>
+            <input type="number" id="news_count" name="news_count" min="1" max="8"><br><br>
+            <label for="topics">Список тем:</label><br>
+            <select id="topics" name="topics" multiple size="5">
+                <option value="technology">Технології</option>
+                <option value="science">Наука</option>
+                <option value="sports">Спорт</option>
+                <option value="entertainment">Розваги</option>
+                <option value="politics">Політика</option>
+            </select><br><br>
+            <label for="additionalinformation">Додаткова інформація користувача:</label><br>
+            <textarea id="additionalinformation" name="additionalinformation" rows="7" cols="30">Немає інформації</textarea><br><br>
+            <label for="file">Оберіть файл з зображенням:</label><br>
+            <input type="file" id="file" name="file" accept="image/*"><br><br>
+            <button type="submit">Надіслати</button>
+            <button type="reset">Очищення форми</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Лабораторна 3_1</title>
+    </head>
+    <body>
+        <h1>Реєстрація в списку розсилки</h1>
+        <p>Приєднуйтеся до нашого списку розсилки</p>
+        <form action="https://www.w3schools.com/action_page.php" method="get">
+            <label for="fullname1">Повне ім'я:</label><br>
+            <input type="text" id="fullname1" name="fullname"><br>
+            <label for="email1">е-мейл:</label><br>
+            <input type="email" id="email1" name="email"><br><br>
+            <input type="submit" value="Підписатися">
+        </form>
+
+        <p><b>Удосконалена форма</b></p>
+
+        <h1>Реєстрація в списку розсилки</h1>
+        <p>Приєднуйтеся до нашого списку розсилки</p>
+        <form action="https://www.w3schools.com/action_page.php" method="post" autocomplete="on" target="_blank">
+            <fieldset>
+                <legend>Форма для реєстрації в списку розсилки:</legend>
+                <label for="fullname2">Повне ім'я:</label><br>
+                <input type="text" id="fullname2" name="fullname" placeholder="Введіть ваше повне ім'я" size="30" autocomplete="name" required><br>
+                <label for="email2">Електронна пошта:</label><br>
+                <input type="email" id="email2" name="email" placeholder="Введіть вашу електронну пошту" size="30" autocomplete="email" required><br><br>
+                <button type="submit">Підписатися</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
